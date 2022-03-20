@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<blog>
+    <posts>
+        <post id="1">
+            <title>title1</title>
+            <category>lifestyle</category>
+            <author id="1">
+                <username>admin</username>
+                <email>admin@site.com</email>
+                <joinedAt>2022-03-20T23:36:30.352+02:00</joinedAt>
+            </author>
+            <createdAt>2022-03-20T23:36:30.352+02:00</createdAt>
+            <summary>Lorem ipsum dolor sit amet, consectetur ...</summary>
+            <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lectus porttitor, scelerisque augue eu, vehicula metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</content>
+            <views>132</views>
+            <ratings>
+                <rating>
+                    <user id="1">
+                        <username>admin</username>
+                        <email>admin@site.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </user>
+                    <isLiked>true</isLiked>
+                </rating>
+                <rating>
+                    <user id="2">
+                        <username>user456</username>
+                        <email>user456@gmail.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </user>
+                    <isLiked>false</isLiked>
+                </rating>
+                <rating>
+                    <user id="3">
+                        <username>user884</username>
+                        <email>user884@mail.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </user>
+                    <isLiked>true</isLiked>
+                </rating>
+            </ratings>
+            <comments>
+                <comment id="1">
+                    <author id="1">
+                        <username>admin</username>
+                        <email>admin@site.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </author>
+                    <createdAt>2022-03-20T23:36:30.353+02:00</createdAt>
+                    <content>This is a comment</content>
+                </comment>
+                <comment id="2">
+                    <author id="2">
+                        <username>user456</username>
+                        <email>user456@gamil.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </author>
+                    <createdAt>2022-03-20T23:36:30.353+02:00</createdAt>
+                    <content>This is a comment</content>
+                </comment>
+                <comment id="3">
+                    <author id="3">
+                        <username>user884</username>
+                        <email>user884@mail.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </author>
+                    <createdAt>2022-03-20T23:36:30.353+02:00</createdAt>
+                    <content>This is a comment</content>
+                </comment>
+            </comments>
+            <tags>
+                <tag>tag1</tag>
+                <tag>tag2</tag>
+                <tag>tag3</tag>
+                <tag>tag4</tag>
+                <tag>tag5</tag>
+            </tags>
+        </post>
+        <post id="2">
+            <title>title2</title>
+            <category>travel</category>
+            <author id="1">
+                <username>admin</username>
+                <email>admin@site.com</email>
+                <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+            </author>
+            <createdAt>2022-03-20T23:36:30.353+02:00</createdAt>
+            <summary>Vestibulum facilisis feugiat risus sit a...</summary>
+            <content>Vestibulum facilisis feugiat risus sit amet consequat. Donec sodales massa et magna molestie pellentesque id sed diam. Sed lobortis consequat condimentum.</content>
+            <views>367</views>
+            <ratings>
+                <rating>
+                    <user id="1">
+                        <username>admin</username>
+                        <email>admin@site.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </user>
+                    <isLiked>true</isLiked>
+                </rating>
+                <rating>
+                    <user id="2">
+                        <username>user456</username>
+                        <email>user456@gmail.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </user>
+                    <isLiked>false</isLiked>
+                </rating>
+                <rating>
+                    <user id="3">
+                        <username>user884</username>
+                        <email>user884@mail.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </user>
+                    <isLiked>true</isLiked>
+                </rating>
+            </ratings>
+            <comments>
+                <comment id="1">
+                    <author id="1">
+                        <username>admin</username>
+                        <email>admin@site.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </author>
+                    <createdAt>2022-03-20T23:36:30.353+02:00</createdAt>
+                    <content>This is a comment</content>
+                </comment>
+                <comment id="2">
+                    <author id="2">
+                        <username>user456</username>
+                        <email>user456@gamil.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </author>
+                    <createdAt>2022-03-20T23:36:30.353+02:00</createdAt>
+                    <content>This is a comment</content>
+                </comment>
+                <comment id="3">
+                    <author id="3">
+                        <username>user884</username>
+                        <email>user884@mail.com</email>
+                        <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+                    </author>
+                    <createdAt>2022-03-20T23:36:30.353+02:00</createdAt>
+                    <content>This is a comment</content>
+                </comment>
+            </comments>
+            <tags>
+                <tag>tag1</tag>
+                <tag>tag2</tag>
+                <tag>tag3</tag>
+                <tag>tag4</tag>
+                <tag>tag5</tag>
+            </tags>
+        </post>
+    </posts>
+    <users>
+        <user id="1">
+            <username>admin</username>
+            <email>admin@site.com</email>
+            <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+        </user>
+        <user id="2">
+            <username>user456</username>
+            <email>user456@gamil.com</email>
+            <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+        </user>
+        <user id="3">
+            <username>user884</username>
+            <email>user884@mail.com</email>
+            <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+        </user>
+        <user id="4">
+            <username>john</username>
+            <email>john@site.com</email>
+            <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+        </user>
+        <user id="5">
+            <username>bob</username>
+            <email>bob@site.com</email>
+            <joinedAt>2022-03-20T23:36:30.353+02:00</joinedAt>
+        </user>
+    </users>
+</blog>

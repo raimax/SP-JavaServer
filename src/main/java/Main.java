@@ -5,8 +5,11 @@ public class Main {
         try {
             javaServer.start(6666);
         }
-        catch (Exception e) {
-            e.printStackTrace();
+        catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        finally {
+            javaServer.stop();
         }
     }
 }
