@@ -4,6 +4,7 @@ public class Main {
 
         try {
             javaServer.start(6666);
+            javaServer.sendFile("blog.xml");
         }
         catch (Exception ex) {
             System.out.println(ex.getMessage());

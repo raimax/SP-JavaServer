@@ -1,9 +1,9 @@
 import lt.viko.eif.rcepauskas.blog.Blog;
 import lt.viko.eif.rcepauskas.blog.DataService;
+import lt.viko.eif.rcepauskas.blog.FileService;
 import lt.viko.eif.rcepauskas.blog.JaxbTransformer;
 
 import javax.xml.bind.JAXBException;
-import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -16,8 +16,7 @@ public class JavaServer {
     private ServerSocket serverSocket;
     private Socket clientSocket;
     private BufferedOutputStream out;
-    private BufferedInputStream in;
-    private FileService fileService;
+    private final FileService fileService;
 
     public JavaServer() {
         this.fileService = new FileService();
@@ -33,10 +32,7 @@ public class JavaServer {
         System.out.println("Server started on port: " + port);
         clientSocket = serverSocket.accept();
         System.out.println("Client connected");
-
         out = new BufferedOutputStream(clientSocket.getOutputStream());
-
-        beginFileTransfer();
     }
 
     /**
@@ -44,7 +40,6 @@ public class JavaServer {
      */
     public void stop() {
         try {
-            in.close();
             out.close();
             clientSocket.close();
             serverSocket.close();
@@ -54,18 +49,21 @@ public class JavaServer {
         }
     }
 
-    private void beginFileTransfer()  {
-
+    /**
+     * Send a file to the client
+     * @param fileName file name
+     */
+    public void sendFile(String fileName)  {
         Blog blog = DataService.createBlogData();
 
         try {
-            JaxbTransformer.pojoToXml("blog.xml", blog);
+            JaxbTransformer.pojoToXml(fileName, blog);
         }
         catch (JAXBException ex) {
             System.out.println("Jaxb transformation error" + ex.getMessage());
             return;
         }
 
-        fileService.sendFile("blog.xml", in, out);
+        fileService.sendFile(fileName, out);
     }
 }
