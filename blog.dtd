@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT blog (posts, users) >
+<!ELEMENT posts (post*) >
+<!ELEMENT users (user*) >
+<!ELEMENT post (title, category, author, createdAt, summary, content, views, ratings, comments, tags) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT category (#PCDATA) >
+<!ELEMENT author (username, email, joinedAt) >
+<!ELEMENT user (username, email, joinedAt) >
+<!ELEMENT username (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT joinedAt (#PCDATA) >
+<!ELEMENT createdAt (#PCDATA) >
+<!ELEMENT summary (#PCDATA) >
+<!ELEMENT content (#PCDATA) >
+<!ELEMENT views (#PCDATA) >
+<!ELEMENT ratings (rating*) >
+<!ELEMENT rating (user, isLiked) >
+<!ELEMENT isLiked (#PCDATA) >
+<!ELEMENT comments (comment*) >
+<!ELEMENT comment (author, createdAt, content) >
+<!ELEMENT tags (tag*) >
+<!ELEMENT tag (#PCDATA) >
+<!ATTLIST user id CDATA "" >
+<!ATTLIST author id CDATA "" >
+<!ATTLIST post id CDATA ""> 
+<!ATTLIST comment id CDATA "" >
